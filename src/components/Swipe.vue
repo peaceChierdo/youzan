@@ -20,7 +20,8 @@
 </style>
 
 <script>
- 	import Swiper from 'swiper'
+ 	// import Swiper from 'swiper'
+ 	import Swiper from 'swiper/dist/js/swiper.js'
  	import 'swiper/dist/css/swiper.css'
 
 	export default {
