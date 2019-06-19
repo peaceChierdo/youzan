@@ -3,7 +3,7 @@
     <div class="swiper-wrapper">
       <div class="swp-page swiper-slide" v-for="list in lists">
         <a class="js-no-follow" :href="list.clickUrl">
-          <img class="goods-main-photo fadeIn" :src="list.img">
+          <img class="goods-main-photo fadeIn" :src="list.img" :onerror='this.src="https://img.yzcdn.cn/upload_files/2016/08/05/Fv5hhMZrtPZQWE7fape0ddEYtSuy.png?imageView2/2/w/300/h/0/q/75/format/png"'>
         </a>
       </div>
     </div>
@@ -31,7 +31,10 @@
 				type: Array,
 				required: true
 			},
-			name: {}
+			name: {},
+			defaultImg: {
+				type: String
+			}
 		},
 		created() {
 

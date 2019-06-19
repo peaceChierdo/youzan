@@ -78,7 +78,7 @@
                     <li class="goods-item" v-for="(list,index) in rankData.hotGoods">
                       <a :href="'goods.html?id='+list.id">
                         <div class="thumb badge center-img">
-                          <img :src="list.img">
+                          <img :src="list.img" :onerror="defaultImg">
                           <span class="num">{{index+1}}</span>
                         </div>
                         <div class="detail">
@@ -180,7 +180,7 @@
                   v-for="list in subData.brandList"
                   @click="toSearch(list)"
                 >
-                  <img :src="list.img" :alt="list.name" class="category-img">
+                  <img :src="list.img" :alt="list.name" class="category-img" :onerror="defaultImg">
                   <span class="category-item-name">{{list.name}}</span>
                 </li>
               </ul>
@@ -190,7 +190,7 @@
                   v-for="list in subData.categoryList"
                   @click="toSearch(list)"
                 >
-                  <img :src="list.img" :alt="list.name" class="category-img">
+                  <img :src="list.img" :alt="list.name" class="category-img" :onerror="defaultImg">
                   <span class="category-item-name">{{list.name}}</span>
                 </li>
               </ul>

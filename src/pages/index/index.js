@@ -19,7 +19,8 @@ let app = new Vue({
 		pageSize: 6,
 		loading: false,
 		allLoaded: false,
-		bannerLists: null
+		bannerLists: null,
+		defaultImg: 'this.src="https://img.yzcdn.cn/upload_files/2016/08/05/Fv5hhMZrtPZQWE7fape0ddEYtSuy.png?imageView2/2/w/300/h/0/q/75/format/png"'
 	},
 	created() {
 		this.getLists()
