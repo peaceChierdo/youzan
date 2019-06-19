@@ -25,7 +25,7 @@ export default {
   name: 'hello',
   data () {
     return {
-      msg: 'Welcome to 饥人谷 vue 项目班'
+      msg: 'Welcome!'
     }
   }
 }

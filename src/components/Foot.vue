@@ -48,7 +48,6 @@
     },
     methods: {
       changeNav(list,index) {
-        console.log(list.href)
         location.href = `${list.href}?index=${index}`
       }
     }

@@ -129,7 +129,7 @@ new Vue({
 			this.lists.forEach((item,idx) => {
 				if(idx!=shopIndex){
 					item.editing = false
-				  item.editMsg = shop.editing?'':'编辑'	
+				    item.editMsg = shop.editing?'':'编辑'	
 				}
 			})
 			this.editingShop = shop.editing ?shop :null
